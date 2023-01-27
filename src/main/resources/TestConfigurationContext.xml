@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean class="com.prowings.Student" name="stud">
+        	<property name="id" value="3"></property>
+        	<property name="name" value="Raj"></property>
+        	<property name="address" value="Pune"></property>
+        	
+        </bean>
+        
+        <bean class="com.prowings.Student" name="stud1">
+        	<property name="id" value="5"></property>
+        	<property name="name" value="Pruthvi"></property>
+        	<property name="address" value="Mumbai"></property>
+        	
+        </bean>
+</beans>

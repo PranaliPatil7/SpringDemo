@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+       <!-- <bean class="com.constuctor.injection.Certi" name="cer">
+        	<constructor-arg value="Android"></constructor-arg>
+        </bean> -->
+        
+        <bean class="com.constuctor.injection.Person" name="person">
+        	<constructor-arg>
+        		<value>ram</value>
+           	</constructor-arg>
+           	<constructor-arg value="12"></constructor-arg>
+           <!--	<constructor-arg ref="cer"></constructor-arg> -->
+        
+        </bean>
+</beans>

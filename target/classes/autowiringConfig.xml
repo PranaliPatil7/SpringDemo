@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+               
+      <bean class="com.autowiring.Address" name="address">
+        	<property name="Street" value="abdcp"></property>
+        	<property name="city" value="pune"></property>       	
+        </bean>        
+        <bean class="com.autowiring.Employee" name="emp" autowire="byName">       	
+        </bean>
+        
+        <!--<bean class="com.autowiring.Address" name="add">
+        	<property name="Street" value="abdcp"></property>
+        	<property name="city" value="pune"></property>       	
+        </bean>        
+        <bean class="com.autowiring.Employee" name="emp" autowire="byType">  in autowire by type no matter name is same or not     	
+        </bean>-->
+        
+        <!--<bean class="com.autowiring.Address" name="address">
+        	<property name="Street" value="abdcp"></property>
+        	<property name="city" value="pune"></property>       	
+        </bean>        
+        <bean class="com.autowiring.Employee" name="emp" autowire="constructor">       	
+        </bean>-->
+        
+</beans>

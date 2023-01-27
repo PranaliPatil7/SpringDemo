@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean class="com.constuctor.injection.AdditionAmbiguity" name="add">
+	      <constructor-arg value="10"></constructor-arg>
+	      <constructor-arg value="30"></constructor-arg>
+	        
+	        
+	      <!-- <constructor-arg value="10" type="int"></constructor-arg>
+	      <constructor-arg value="30" type="int"></constructor-arg>  when we want specific type of constructor then use type-->
+	        
+	        
+	      <!--<constructor-arg value="10" index="1"></constructor-arg>
+	      <constructor-arg value="30" index="0"></constructor-arg>when we want value of a=30,and value of b=10 then use index-->
+        </bean>
+</beans>
+

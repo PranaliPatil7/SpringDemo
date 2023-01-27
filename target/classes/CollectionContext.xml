@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean name="emp" class="com.collection.Employee">
+        	<property name="name" value="Raj"></property>       	
+        	<property name="phones">
+        		<list>
+        			<value>9222448855</value>
+        			<value>8701400000</value>
+        			<value>9373078855</value>
+        		</list>
+        	</property>
+        	
+        	<property name="address">
+        		<set>	
+        			<value>Pune</value>
+        			<value>Mumbai</value>
+        			<value>Delhi</value>       			
+        		</set>
+        	</property>
+        	
+        	<property name="cources">
+        		<map>
+        			<entry key="java" value="3Months"></entry>
+        			<entry key="python" value="2Months"></entry>
+        			<entry key="HTML" value="1Months"></entry>
+        		</map>
+        	</property> 
+        	<property name="Info">
+        		<props>
+        			<prop key="name">jay</prop>
+        			<prop key="city">Maharshta</prop>
+        			<prop key="department">Software</prop>
+        		</props>
+        	</property>
+        	
+        	      	
+        	
+        </bean>
+</beans>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+         <bean class="com.autowiring.candidate.Empolyee" name="emp" autowire="byType">
+        	
+        </bean>
+        
+        <bean class="com.autowiring.candidate.Address" name="address">
+        	<property name="city" value="pune"/>
+        	<property name="pin" value="108405"/>
+        </bean>
+        <bean class="com.autowiring.candidate.Department" name="dept" autowire-candidate="false">
+        	<property name="id" value="2"/>         <!-- only in  case autowire=byType we use candidate-->
+        	<property name="sub" value="Java"/>     <!-- by using byName we can not inject candidate-->
+        </bean>
+</beans>
